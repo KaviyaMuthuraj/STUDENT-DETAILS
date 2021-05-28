@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ADD_FORM</title>
+    <style type="text/css">
+        body,html{
+            margin: 0px;
+            box-sizing: border-box;
+            background-image: url('img.jpg');
+            background-size: cover;
+            position: relative;
+        }
+        .main{
+         width:800px;
+         height:400px;
+         line-height:20px;
+         border:2px solid #F65636;
+         border-radius:3%;
+         align-items:center;
+         position:absolute;
+         margin:13% 28%;
+         transform:scale(0);
+         background-color:rgba(246, 246, 246, 0.4);
+       }
+       h1{
+         color:#F65636;
+         font-size:47px;
+         font-weight: bold;
+         text-shadow: 2px 2px 5px black;
+         padding:20px;
+         text-align:center;
+       }
+       h2{
+         color:#F65636;
+         font-size:47px;
+         text-shadow: 2px 2px 5px black;
+         font-weight: bold;
+         padding:10px;
+         text-align:center;
+       }
+        input[type=button] {
+          width: 18%;
+          font-size:22px;
+          margin-left: 0px;
+          border: 0px;
+          font-weight: bold;
+          padding: 15px;
+          background-color: #3eb8fa;
+          color: white;
+          cursor: pointer;
+        }
+
+        input[type=button]:hover {
+          background-color: #f2f8f3;
+          color: #3eb8fa;
+        }
+        .btn{
+            margin-top: 50px;
+            text-align: right;
+            margin-right: 90px;
+        } 
+        .active{
+          transition:all ease-in-out 600ms;
+          transform: scale(1);
+        }   
+             
+    </style>
+</head>
+<body>
+    <div class="main">
+    <form >
+        <h1>ADD STUDENT DETAILS</h1><br>
+        <h2>Please provid valid input...!</h2>
+        
+        <div class="btn">
+            <a href="Main_Form.html"><input type="button" name="cancel" value="OK" /></a>
+        </div>
+
+    </form>
+  </div>
+  <script type="text/javascript">
+    var clickMetoOpen=function(){
+      document.querySelector(".main").classList.add("active");
+    }
+    let t=setInterval(clickMetoOpen,700);
+  </script>
+</body>
+</html>

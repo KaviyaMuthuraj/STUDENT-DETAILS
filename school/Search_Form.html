@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SEARCH_FORM</title>
+	<style type="text/css">
+		body,html{
+			margin: 0px;
+			box-sizing: border-box;
+			background-image: url('img.jpg');
+			background-size: cover;
+		}
+		.main{
+         width:800px;
+         height:600px;
+         line-height:20px;
+         border:0.3px solid rgba(246, 246, 246, 0.2);
+         border-radius:3%;
+         align-items:center;
+         position:absolute;
+         margin:9.4% 28%;
+         background-color:rgba(246, 246, 246, 0.4);
+       }
+       h1{
+         color:white;
+         font-size:50px;
+         font-weight: bold;
+         padding:20px;
+         text-align:center;
+       }
+       input[type=text]{
+          width: 80%;
+          padding: 12px;
+          border: 0px;
+          border-bottom: 2px solid #ccc;
+          background-color:rgba(246, 246, 246, 0.9);
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-left:75px;
+          color:#032030;
+          margin-bottom: 16px;
+          font-size: 25px;
+        }
+        input[type=text]:hover{
+          border-bottom: 2px solid #1D0F53;
+          color:#032030;
+          background-color:rgba(246, 246, 246, 0.9);
+          color:  #1D0F53;
+        }
+        input[type=submit] {
+          width: 18%;
+          font-size:22px;
+          margin-left: 20px;
+          border: 0px;
+          font-weight: bold;
+          padding: 15px;
+          background-color: #3eb8fa;
+          color: white;
+          cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+          background-color: #f2f8f3;
+          color: #3eb8fa;
+        }
+        input[type=button] {
+          width: 18%;
+          font-size:22px;
+          margin-left: 0px;
+          border: 0px;
+          font-weight: bold;
+          padding: 15px;
+          background-color: #3eb8fa;
+          color: white;
+          cursor: pointer;
+        }
+
+        input[type=button]:hover {
+          background-color: #f2f8f3;
+          color: #3eb8fa;
+        }
+        .btn{
+        	text-align: right;
+        	margin-right: 80px;
+        }
+		
+	</style>
+</head>
+<body>
+	<div class="main">
+   	<form method="Post" action="./searcing">
+	   	<h1>SEARCH FORM</h1>
+	   	<input type="text" name="id" placeholder="Enter the Person Id" autocomplete="off" /><br><br>
+	   	
+	   	<div class="btn">
+	   		<a href="Main_Form.html"><input type="button" name="cancel" value="CANCEL" /></a>
+	   		<input type="submit" name="search" value="SEARCH"/>
+	   	</div>
+   	</form>
+  </div>
+
+</body>
+</html>

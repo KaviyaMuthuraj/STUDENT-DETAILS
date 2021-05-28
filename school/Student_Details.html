@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>STUDENTS DETAILS FORM</title>
+	<style type="text/css">
+		body,html{
+			margin: 0px;
+			height: 100%;
+			box-sizing: border-box;
+			background-image: url('img.jpg');
+			background-size: cover;
+		}
+		.main{
+         width:800px;
+         height:600px;
+         line-height:20px;
+         border:0.3px solid rgba(246, 246, 246, 0.2);
+         border-radius:3%;
+         align-items:center;
+         position:absolute;
+         margin:9.4% 28%;
+         background-color:rgba(246, 246, 246, 0.4);
+       }
+       h1{
+         color:white;
+         font-size:50px;
+         font-weight: bold;
+         padding:20px;
+         text-align:center;
+       }
+       input[type=submit] {
+          width: 18%;
+          font-size:22px;
+          margin-left: 20px;
+          border: 0px;
+          font-weight: bold;
+          padding: 15px;
+          background-color: #3eb8fa;
+          color: white;
+          cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+          background-color: #f2f8f3;
+          color: #3eb8fa;
+        }
+        input[type=button] {
+          width: 18%;
+          font-size:22px;
+          margin-left: 0px;
+          border: 0px;
+          font-weight: bold;
+          padding: 15px;
+          background-color: #3eb8fa;
+          color: white;
+          cursor: pointer;
+        }
+
+        input[type=button]:hover {
+          background-color: #f2f8f3;
+          color: #3eb8fa;
+        }
+        .btn{
+        	text-align: right;
+        	margin-right: 80px;
+        }
+		
+	</style>
+</head>
+<body>
+	<div class="main">
+   	<form method="Post" action="./all">
+	   	<h1>STUDENTS DETAILS</h1>
+	   	
+	   	<div class="btn">
+	   		<a href="Main_Form.html"><input type="button" name="cancel" value="CANCEL" /></a>
+	   		<input type="submit" name="ok" value="SHOW"/>
+	   	</div>
+   	</form>
+  </div>
+
+</body>
+</html>
